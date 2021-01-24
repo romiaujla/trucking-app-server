@@ -1,5 +1,5 @@
 -- Drop Tables
-DROP IF EXISTS user;
+DROP TABLE IF EXISTS user;
 
 -- Drop enums
-DROP IF EXISTS user_role_enum;
+DROP TYPE IF EXISTS user_role_enum;
