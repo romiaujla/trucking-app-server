@@ -6,9 +6,10 @@ const cors = require ('cors');
 const helmet = require('helmet');
 
 const app = express();
-const morganOptions = NODE_ENV === 'production' 
-    ? 'tiny' 
+const morganOptions = NODE_ENV === 'production'
+    ? 'tiny'
     : 'common';
+app.use(express.json());
 app.use(morgan(morganOptions));
 app.use(helmet());
 app.use(cors());
